@@ -1,1 +1,94 @@
-/*This is an external stylesheet*/
+header {
+    background-color: #A08D6E;
+    text-align: center;
+    padding: 50px;
+    color: black; 
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+
+}
+
+main {
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 5%;   /* Added as apart of testing */
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+    background-position: center;
+}
+ 
+p {
+    padding-right: 35;
+    font-size: 20px;   /* Added as apart of testing */
+}
+
+ul {
+    font-size: 20px;   /* Added as apart of testing */
+}
+
+footer {
+    background-color: #A08D6E;
+    text-align: center;
+    margin: 0px;
+    padding: 50px;
+    color: white;
+}
+
+a {
+    color:black;
+    font-size: 20px;
+}
+
+#how {
+    text-align: left;
+}
+
+#side_image {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    padding: 5px;
+    float: right;
+}
+
+#treehoues{
+    width: 40%;
+}
+ 
+.logo {
+    display:block;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+.treehouse-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.treehouse-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+.treehouse-item img {
+    max-width: 90%;
+    height: auto;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
