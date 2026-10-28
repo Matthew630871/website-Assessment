@@ -15,10 +15,8 @@ header a:hover {
 }
 
 main {
-    padding-left: 10%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    padding-top: 5%;   /* Added as apart of testing */
+    padding: 40px;
+    margin: 30px auto;  
 }
 body{
     margin: 0px;
@@ -78,6 +76,7 @@ a {
 .chalets-item {
     display: flex;
     flex-direction: column;
+    flex: 1 1 300px;   /* this allows the items to grow and fill space found on https://www.w3schools.com/cssref/css3_pr_flex.php. */
     width: 320px;
     background-color: #ffffff;
     border: 1px solid #ccc;
@@ -96,7 +95,8 @@ a {
 
 .carousel-inner .item img{
     width:100%;
-    height: 200px !important; /* I got AI to help me with this as i was very lost *?
+    height: auto !important; /* I got AI to help me with this as i was very lost */
+    aspect-ratio: 16/10; /* this allows the images to grow in size but still keep the same proporttions found on https://www.w3schools.com/cssref/css_pr_aspect-ratio.php.  */
     object-fit: cover;   /* Scales and crops photos without stretching */
 }
 
