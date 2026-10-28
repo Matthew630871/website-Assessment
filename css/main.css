@@ -1,8 +1,8 @@
 header {
-    background-color: #A08D6E;
+    background-color:rgb(196, 196, 196);
     text-align: center;
     padding: 50px;
-    color: black; 
+    color: white; 
 }
 
 header a {
@@ -16,26 +16,37 @@ header a:hover {
 
 main {
     padding: 40px;
-    margin: 30px auto;  
+    margin: 30px auto;
+    color: white;
+
 }
 body{
     margin: 0px;
     padding: 0px;
+    background-image: url('../pics/mountain_view_dark.jpg');
+    background-position:  center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
+}
+
+h1, h2, h3 {
+    color:white; 
 }
  
 p {
-    padding-right: 35;
+    padding-right: 35px;
     font-size: 20px;   /* Added as apart of testing */
+    color: white;
 }
 
 ul {
     font-size: 20px;   /* Added as apart of testing */
+    color:white;
 }
 
 footer {
-    background-color: #A08D6E;
+    background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
     margin: 0px;
     padding: 50px;
@@ -43,7 +54,7 @@ footer {
 }
 
 a {
-    color:black;
+    color:white;
     font-size: 20px;
 }
 
@@ -77,8 +88,7 @@ a {
     display: flex;
     flex-direction: column;
     flex: 1 1 300px;   /* this allows the items to grow and fill space found on https://www.w3schools.com/cssref/css3_pr_flex.php. */
-    width: 320px;
-    background-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
