@@ -163,6 +163,10 @@ a {
     color: #ffffff;
 }
 
+.signup-form-container input[type="text"] {
+    color: #000000 !important;
+}
+
 .signup-form-container .form{
     margin-bottom: 15px;
     text-align: left;
