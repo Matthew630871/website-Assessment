@@ -71,12 +71,20 @@
                 Contact: maungaclub@maungaclub.maungaclub
         </footer>
 
-        <script>
-            const contactForm = document.getElementById("contactForm");
-            contactForm.addEventListener("submit", function(event) {
-                event.preventDefault();
-                alert("Thank you! Your account has been created.");
-                contactForm.reset();
+        <script>  /* https://stackoverflow.com/questions/52637406/how-do-i-add-html-form-data-to-a-mailto-link */
+            document.getElementById("signupForm").addEventListener("submit", function(event) {
+                    event.preventDefault(); // 1. Stops page reload
+                    
+                    var fname = document.getElementById("firstname").value;
+                    var lname = document.getElementById("lastname").value;
+                    
+                    // 2. Safely formats body text with spaces and encoding
+                    var bodyText = "First Name: " + fname + "\nLast Name: " + lname;
+                    
+                    // 3. Triggers default email client reliably
+                    window.location.href = "mailto:someone@example.com?subject=" 
+                        + encodeURIComponent("Test Email") 
+                        + "&body=" + encodeURIComponent(bodyText);
             });
         </script>
     </body>
