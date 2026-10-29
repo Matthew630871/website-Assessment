@@ -72,19 +72,30 @@
         </footer>
 
         <script>  /* https://stackoverflow.com/questions/52637406/how-do-i-add-html-form-data-to-a-mailto-link */
-            document.getElementById("signupForm").addEventListener("submit", function(event) {
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
                     event.preventDefault(); // 1. Stops page reload
                     
                     var fname = document.getElementById("firstname").value;
                     var lname = document.getElementById("lastname").value;
+                    var userAddress = document.getElementById("address").value;
+                    var userID = document.getElementById("idNumber").value;
                     
+                    var recipient = "maungaclub@maungaclub.maungaclub";
+                    var subjectText = "Maunga Club Membership Application";
+
                     // 2. Safely formats body text with spaces and encoding
-                    var bodyText = "First Name: " + fname + "\nLast Name: " + lname;
+                    var bodyText = "New Membership Application Details: \n\n" + 
+                                    "First Name: " + fname + "\n" + 
+                                    "Last Name: " + lname + "\n" + 
+                                    "Address: " + userAddress + "\n" + 
+                                    "ID Number: " + userID + "\n\n";
                     
                     // 3. Triggers default email client reliably
-                    window.location.href = "mailto:someone@example.com?subject=" 
-                        + encodeURIComponent("Test Email") 
-                        + "&body=" + encodeURIComponent(bodyText);
+                    window.location.href = "mailto:" + recipient + 
+                        "?subject=" + encodeURIComponent(subjectText) + 
+                    "&body=" + encodeURIComponent(bodyText);
+
+                    contactForm.reset();
             });
         </script>
     </body>
