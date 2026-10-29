@@ -1,8 +1,9 @@
 header {
-    background-color:rgb(196, 196, 196);
+    background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
     padding: 30px 50px;
     color: white; 
+    padding-bottom: 30px;
 }
 
 header a {
@@ -18,6 +19,12 @@ header nav a {
     display: inline-block;
     padding: 10px 15px;  /* Add via feedback */
     margin: 0 8px;       /* Add via feedback */
+    color: #fff;
+}
+
+header nav a:hover, header nav a.active{
+    background-color: transparent !important;
+    color: #ddd !important;
 }
 main {
     padding: 40px;
@@ -92,6 +99,7 @@ a {
     max-width: 600px;  /* Add via feedback */
     width: 100%;    /* Add via feedback */
     height: auto;   /* Add via feedback */
+    margin-top: 35px;
 }
 
 
@@ -104,6 +112,7 @@ a {
     gap: 20px;
     align-items: stretch; /* added through testing ( Forces all cards to be same height )*/
     justify-content: center;  /* Add via feedback ( Centers items )*/
+    margin-top: 30px;
 }
 .chalets-item {
     display: flex;
@@ -113,10 +122,12 @@ a {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
-    text-align: center; /* Centers chalets titles and descriptions */
+    text-align: left;
 }
 
-
+.chalets-item h3 {
+    text-align: center;
+}
 /* ------CAROUSEL STYLING------ */
 .carousel {
     width: 100%; 
@@ -150,6 +161,8 @@ a {
     bottom: 5px;
 }
 
+
+/*--- Sign up form ---*/ 
 .signup-form-container { 
     background-color: rgba(0, 0, 0, 0.8);
     padding: 30px;
@@ -165,6 +178,11 @@ a {
 
 .signup-form-container input[type="text"] {
     color: #000000 !important;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
 }
 
 .signup-form-container .form{
