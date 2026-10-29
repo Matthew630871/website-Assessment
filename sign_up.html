@@ -37,22 +37,22 @@
                     
                     <div class="form">
                         <label for="first-name"><b>First Name</b></label>
-                        <input type="text" placeholder="first-name" name="first-name" required>
+                        <input type="text" id="firstname" placeholder="first-name" name="first-name" required>
                     </div>
 
                     <div class="form">
                         <label for="last-name"><b>last Name</b></label>
-                        <input type="text" placeholder="last-name" name="last-name" required>
+                        <input type="text"id="lastname" placeholder="last-name" name="last-name" required>
                     </div>
                     
                     <div class="form">
                         <label for="address"><b>Address</b></label>
-                        <input type="text" placeholder="Address" name="address" required>
+                        <input type="text" id="address" placeholder="Address" name="address" required>
                     </div>
 
                     <div class="form">
                         <label for="ID"><b>ID number</b></label>
-                        <input type="text" placeholder="Enter ID number" name="ID" required>
+                        <input type="text" id="idNumber" placeholder="Enter ID number" name="ID" required>
                     </div>
 
                     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
@@ -72,6 +72,9 @@
         </footer>
 
         <script>  /* https://stackoverflow.com/questions/52637406/how-do-i-add-html-form-data-to-a-mailto-link */
+            
+            const contactForm = document.getElementById("contactForm");
+
             document.getElementById("contactForm").addEventListener("submit", function(event) {
                     event.preventDefault(); // 1. Stops page reload
                     
@@ -88,7 +91,8 @@
                                     "First Name: " + fname + "\n" + 
                                     "Last Name: " + lname + "\n" + 
                                     "Address: " + userAddress + "\n" + 
-                                    "ID Number: " + userID + "\n\n";
+                                    "ID Number: " + userID + "\n\n" + 
+                                    "Please attach proof of address (e.g. power bill) and ID (e.g. passport or drivers license).";
                     
                     // 3. Triggers default email client reliably
                     window.location.href = "mailto:" + recipient + 
