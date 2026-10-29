@@ -85,6 +85,7 @@ a {
 }
 
 
+
 .logo {
     display:block;
     margin: 0 auto 0 auto;
@@ -95,14 +96,14 @@ a {
 
 
 
-
+/* ------Chalets page------ */
 
 .chalets-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    align-items: stretch; /* added through testing ( Forces all cards to be same height*/
-
+    align-items: stretch; /* added through testing ( Forces all cards to be same height )*/
+    justify-content: center;  /* Add via feedback ( Centers items )*/
 }
 .chalets-item {
     display: flex;
@@ -112,6 +113,7 @@ a {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
+    text-align: center; /* Centers chalets titles and descriptions */
 }
 
 
@@ -146,4 +148,47 @@ a {
 
 .carousel-indicators {
     bottom: 5px;
+}
+
+.signup-form-container { 
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    max-width: 550px;
+    margin: 30px auto;
+}
+
+.signup-form-container form {
+    color: #ffffff;
+}
+
+.signup-form-container .form{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Sign up and Cancel buttons */
+.signupbtn, .cancelbtn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.signupbtn {
+    background-color: #4e4e4e;
+    color: #ffffff;
+    float: right;
+}
+
+.cancelbtn {
+    background-color: #4e4e4e;
+    color: #ffffff;
+    float: left;
+}
+
+.clearfix::after {
+    content:"";
+    clear: both;
 }
